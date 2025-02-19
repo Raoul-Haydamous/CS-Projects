@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+        <title>My First Survey</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+
+    <body>
+        <h1 id = "title">My First Survey</h1>
+        <p id = "description">This is my first certification project from free code camp!</p>
+
+        <form id = "survey-form">
+
+            <fieldset>
+            <label for = "name" id = "name-label">Enter your name:
+                <input name = "name" id = "name", type = "text" placeholder="Your first and last name" required>
+            </label>
+
+            <label for = "email" id = "email-label">Enter your email:
+                <input name = "email" id = "email" type= "email" placeholder= "e.g everything@gmail.com" required>
+            </label>
+            </fieldset>
+
+            <fieldset>
+            <label for = "number" id = "number-label">How many programming languages do you know?:
+                <input name = "number" id = "number" type = "number" placeholder = "1,2,3 etc." min = 1 max = 25>
+            </label>
+
+            <label for = "dropdown">What is your favourite software to learn programming?
+                <select name = "dropdown" id = "dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">Youtube</option>
+                    <option value="2">Free Code Camp</option>
+                    <option value="3">Ai(ChatGPT)</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+
+            <legend>Do you like coding?
+                <label for = "y">
+                    <input id = "y" type = "radio" name = "coding?" value = "y" checked> Yes
+                </label>
+                
+                <label for = "n">
+                    <input id = "n" type = "radio" name = "coding?" value = "n" > No
+                </label>
+            </legend>
+
+            <label>What languages do you know?
+                <input type ="checkbox" value = "html">Html
+                <input type ="checkbox" value = "py">Python
+                <input type ="checkbox" value = "js">JavaScript
+                <input type ="checkbox" value = "j">Java
+                <input type ="checkbox" value = "c++">C++
+                <input type ="checkbox" value = "other">Other
+            </label>
+
+            <label for = "experience">What experience do you have?
+                <textarea name = "exp" id = "exp" rows = 3 cols = 30 placeholder="I have worked for..."></textarea>
+            </label>
+            </fieldset>
+
+            <input type="submit" id = "submit" value = "submit">
+        </form>
+    </body>
+</html>
