@@ -1,16 +1,90 @@
+h1, p{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+h1{
+    padding-top: 1em;
+}
+p{
+    padding-bottom: 2em;
+}
+
 body{
     width:100%;
     height: 100vh;
-    margin:0;
-    background-image: url(imgs/Bg-img.jpg);
-    color: #ffffff;
+    margin: 0;
+    background-image: url(imgs/cool-background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
     font-family: Tahoma;
     font-size: 16px;
 }
 
 form{
-    background-color: #1b1b32;
+    background-color: #00505099;
     margin: auto;
-    width: 80%;
+    width: 50%;
+    text-align:left;
+    border: #ffffff;
+    border-radius: 2em;
+}
+
+fieldset{
     padding-bottom: 2em;
+    padding-top: 2em;
+    border: none;
+    border-bottom: 3px solid #00505099;
+}
+fieldset:last-of-type{
+    border: none;
+}
+
+label{
+    display: block;
+    padding: 5px;
+}
+
+input[type="radio"]{
+    display: inline ;
+    margin: auto;
+    padding: 10px;
+}
+input[type="text"], input[type="email"], input[type="number"]{
+    display: block ;
+    margin: auto;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+}
+input[type="checkbox"]{
+    display: inline ;
+    margin: auto;
+    padding: 10px;
+}
+input[type="submit"]{
+    display: block;
+    padding: 1em;
+    margin: auto;
+    width: 95%;
+    font-family:'Franklin Gothic Medium';
+    background: #058c8c;
+    border: none;
+    font-size: 14px;
+}
+
+select{
+    display: block;
+    padding: 10px;
+    width: 98%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+textarea{
+    display: block;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
 }
